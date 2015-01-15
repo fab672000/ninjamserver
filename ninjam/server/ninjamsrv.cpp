@@ -365,7 +365,7 @@ static int ConfigOnToken(LineParser *lp)
     {
       char path[512];
       snprintf(path, sizeof(path), "%s%s", GetPathFrom(Argv[0]), licFilename); 
-      printf("Trying to open local license file %s\n",path);
+      // printf("Trying to open local license file %s\n",path);
       fp=fopen(path,"rt");
     }
 
