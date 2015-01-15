@@ -647,7 +647,7 @@ int User_Connection::Run(User_Group *group, int *wantsleep)
                 if (group->m_logfp)
                 {
                   // decide when to write new interval
-                  char *chn="?";
+                  const char *chn="?";
                   if (mp.chidx >= 0 && mp.chidx < MAX_USER_CHANNELS) chn=m_channels[mp.chidx].name.Get();
                   fprintf(group->m_logfp,"user %s \"%s\" %d \"%s\"\n",guidstr,myusername,mp.chidx,chn);
                 }
@@ -994,10 +994,10 @@ void User_Group::onChatMessage(User_Connection *con, mpb_chat_message *msg)
         con->Send(newmsg.build());
         return;
       }
-      char *p=msg->parms[1];
+      const char *p=msg->parms[1];
       while (*p && *p != ' ') p++;
       while (*p == ' ') p++;
-      char *pn=p;
+      const char *pn=p;
       while (*p && *p != ' ') p++;
       while (*p == ' ') p++;
 
@@ -1205,7 +1205,7 @@ void User_Group::onChatMessage(User_Connection *con, mpb_chat_message *msg)
         else
         {
           // set topic, notify everybody of topic change
-          char *p=msg->parms[1]+6;
+          const char *p=msg->parms[1]+6;
           while (*p == ' ') p++;
           if (*p)
           {
@@ -1232,7 +1232,7 @@ void User_Group::onChatMessage(User_Connection *con, mpb_chat_message *msg)
         else
         {
           // set topic, notify everybody of topic change
-          char *p=msg->parms[1]+5;
+          const char *p=msg->parms[1]+5;
           while (*p == ' ') p++;
           if (*p)
           {
@@ -1295,7 +1295,7 @@ void User_Group::onChatMessage(User_Connection *con, mpb_chat_message *msg)
         {
           int isbpm=tolower(msg->parms[1][2])=='m';
 
-          char *p=msg->parms[1]+4;
+          const char *p=msg->parms[1]+4;
           while (*p == ' ') p++;
           int v=atoi(p);
           if (isbpm && (v < 20 || v > 400))

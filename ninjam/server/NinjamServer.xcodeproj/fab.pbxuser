@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	0145D9401A67607F00AFA009 /* NinjamServer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = NinjamServer;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	0145D9491A67608000AFA009 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0145D94A1A67608000AFA009 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1228, 16215}}";
+			sepNavSelRange = "{580, 0}";
+			sepNavVisRange = "{3001, 810}";
+			sepNavWindowFrame = "{{1265, 14}, {1214, 1353}}";
+		};
+	};
+	016DC4CB1A6760EB000C10D7 /* usercon.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1204, 20205}}";
+			sepNavSelRange = "{12058, 127}";
+			sepNavVisRange = "{11600, 1228}";
+			sepNavWindowFrame = "{{61, 18}, {1214, 1353}}";
+		};
+	};
+	016DC4CC1A6760EB000C10D7 /* mpb.cpp */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{14279, 827}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 19479}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1155, 12990}}";
+			sepNavSelRange = "{5729, 0}";
+			sepNavVisRange = "{4253, 1939}";
+			sepNavWindowFrame = "{{15, 60}, {1214, 1353}}";
+		};
+	};
+	016DC4D91A676119000C10D7 /* httpget.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 6810}}";
+			sepNavSelRange = "{5601, 0}";
+			sepNavVisRange = "{5514, 306}";
+		};
+	};
+	016DC4DA1A676119000C10D7 /* httpget.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 1695}}";
+			sepNavSelRange = "{2661, 0}";
+			sepNavVisRange = "{2410, 552}";
+		};
+	};
+	016DC4E21A676119000C10D7 /* netinc.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {756, 1155}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 976}";
+		};
+	};
+	016DC4E51A676119000C10D7 /* util.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 822}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 678}";
+		};
+	};
+	016DC50A1A6761FC000C10D7 /* rng.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1036, 1620}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 527}";
+		};
+	};
+	016DC5851A676A29000C10D7 /* heapbuf.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = heapbuf.h;
+		path = /Users/fab/SDKs/ninjam_server_0.06/WDL/heapbuf.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 2445}}";
+			sepNavSelRange = "{2057, 0}";
+			sepNavVisRange = "{1308, 1304}";
+		};
+	};
+	016DC58B1A676A29000C10D7 /* string.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = string.h;
+		path = /Users/fab/SDKs/ninjam_server_0.06/ninjam/server/../../WDL/string.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 2580}}";
+			sepNavSelRange = "{2233, 0}";
+			sepNavVisRange = "{1411, 1264}";
+		};
+	};
+	016DC59D1A676B7B000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC4E21A676119000C10D7 /* netinc.h */;
+		name = "netinc.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	016DC59E1A676B7B000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC4E51A676119000C10D7 /* util.cpp */;
+		name = "util.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 678;
+		vrLoc = 0;
+	};
+	016DC59F1A676B7B000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C6859E8B029090EE04C91782 /* NinjamServer.1 */;
+		name = "NinjamServer.1: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2325;
+		vrLoc = 0;
+	};
+	016DC5DA1A676E5C000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC58B1A676A29000C10D7 /* string.h */;
+		name = "string.h: 60";
+		rLen = 0;
+		rLoc = 2233;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 1411;
+	};
+	016DC5DB1A676E5C000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC5851A676A29000C10D7 /* heapbuf.h */;
+		name = "heapbuf.h: 57";
+		rLen = 0;
+		rLoc = 2057;
+		rType = 0;
+		vrLen = 1304;
+		vrLoc = 1308;
+	};
+	016DC5FA1A67743A000C10D7 /* ninjamsrv.cpp:368 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */;
+		functionName = "ConfigOnToken(LineParser *lp)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 368;
+		location = NinjamServer;
+		modificationTime = 442987655.118647;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	016DC60D1A6775CD000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */;
+		name = "ninjamsrv.cpp: 143";
+		rLen = 0;
+		rLoc = 3439;
+		rType = 0;
+		vrLen = 3743;
+		vrLoc = 3266;
+	};
+	016DC60E1A6775CD000C10D7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 016DC60F1A6775CD000C10D7 /* string.h */;
+		name = "string.h: 111";
+		rLen = 11;
+		rLoc = 3051;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 3542;
+	};
+	016DC60F1A6775CD000C10D7 /* string.h */ = {
+		isa = PBXFileReference;
+		name = string.h;
+		path = /Users/fab/SDKs/ninjam_server_0.06/ninjam/server/../../WDL/string.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 2835}}";
+			sepNavSelRange = "{3051, 11}";
+			sepNavVisRange = "{3542, 1058}";
+		};
+	};
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 0145D9401A67607F00AFA009 /* NinjamServer */;
+		activeTarget = 8DD76F620486A84900D96B5E /* NinjamServer */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* NinjamServer */,
+		);
+		breakpoints = (
+			016DC5FA1A67743A000C10D7 /* ninjamsrv.cpp:368 */,
+		);
+		codeSenseManager = 0145D94A1A67608000AFA009 /* Code sense */;
+		executables = (
+			0145D9401A67607F00AFA009 /* NinjamServer */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					801,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 442982574;
+			PBXWorkspaceStateSaveDate = 442982574;
+		};
+		perUserProjectItems = {
+			016DC59D1A676B7B000C10D7 /* PBXTextBookmark */ = 016DC59D1A676B7B000C10D7 /* PBXTextBookmark */;
+			016DC59E1A676B7B000C10D7 /* PBXTextBookmark */ = 016DC59E1A676B7B000C10D7 /* PBXTextBookmark */;
+			016DC59F1A676B7B000C10D7 /* PBXTextBookmark */ = 016DC59F1A676B7B000C10D7 /* PBXTextBookmark */;
+			016DC5DA1A676E5C000C10D7 /* PBXTextBookmark */ = 016DC5DA1A676E5C000C10D7 /* PBXTextBookmark */;
+			016DC5DB1A676E5C000C10D7 /* PBXTextBookmark */ = 016DC5DB1A676E5C000C10D7 /* PBXTextBookmark */;
+			016DC60D1A6775CD000C10D7 /* PBXTextBookmark */ = 016DC60D1A6775CD000C10D7 /* PBXTextBookmark */;
+			016DC60E1A6775CD000C10D7 /* PBXTextBookmark */ = 016DC60E1A6775CD000C10D7 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0145D9491A67608000AFA009 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8DD76F620486A84900D96B5E /* NinjamServer */ = {
+		activeExec = 0;
+		executables = (
+			0145D9401A67607F00AFA009 /* NinjamServer */,
+		);
+	};
+	C6859E8B029090EE04C91782 /* NinjamServer.1 */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {979, 1125}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2325}";
+		};
+	};
+}

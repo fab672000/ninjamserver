@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016DC4CE1A6760EB000C10D7 /* ninjamsrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */; };
+		016DC4CF1A6760EB000C10D7 /* usercon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4CB1A6760EB000C10D7 /* usercon.cpp */; };
+		016DC4D01A6760EB000C10D7 /* mpb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4CC1A6760EB000C10D7 /* mpb.cpp */; };
+		016DC4D11A6760EB000C10D7 /* netmsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4CD1A6760EB000C10D7 /* netmsg.cpp */; };
+		016DC4EF1A676119000C10D7 /* asyncdns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4D31A676119000C10D7 /* asyncdns.cpp */; };
+		016DC4F11A676119000C10D7 /* connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4D61A676119000C10D7 /* connection.cpp */; };
+		016DC4F31A676119000C10D7 /* httpget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4D91A676119000C10D7 /* httpget.cpp */; };
+		016DC4F61A676119000C10D7 /* listen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4DF1A676119000C10D7 /* listen.cpp */; };
+		016DC4FA1A676119000C10D7 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC4E51A676119000C10D7 /* util.cpp */; };
+		016DC50E1A6761FC000C10D7 /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC50A1A6761FC000C10D7 /* rng.cpp */; };
+		016DC50F1A6761FC000C10D7 /* sha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016DC50C1A6761FC000C10D7 /* sha.cpp */; };
+		8DD76F6A0486A84900D96B5E /* NinjamServer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* NinjamServer.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* NinjamServer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ninjamsrv.cpp; sourceTree = "<group>"; };
+		016DC4CB1A6760EB000C10D7 /* usercon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usercon.cpp; sourceTree = "<group>"; };
+		016DC4CC1A6760EB000C10D7 /* mpb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mpb.cpp; path = ../mpb.cpp; sourceTree = SOURCE_ROOT; };
+		016DC4CD1A6760EB000C10D7 /* netmsg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = netmsg.cpp; path = ../netmsg.cpp; sourceTree = SOURCE_ROOT; };
+		016DC4D31A676119000C10D7 /* asyncdns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asyncdns.cpp; sourceTree = "<group>"; };
+		016DC4D41A676119000C10D7 /* asyncdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asyncdns.h; sourceTree = "<group>"; };
+		016DC4D61A676119000C10D7 /* connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connection.cpp; sourceTree = "<group>"; };
+		016DC4D71A676119000C10D7 /* connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connection.h; sourceTree = "<group>"; };
+		016DC4D91A676119000C10D7 /* httpget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = httpget.cpp; sourceTree = "<group>"; };
+		016DC4DA1A676119000C10D7 /* httpget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpget.h; sourceTree = "<group>"; };
+		016DC4DE1A676119000C10D7 /* jnetlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jnetlib.h; sourceTree = "<group>"; };
+		016DC4DF1A676119000C10D7 /* listen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = listen.cpp; sourceTree = "<group>"; };
+		016DC4E01A676119000C10D7 /* listen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listen.h; sourceTree = "<group>"; };
+		016DC4E21A676119000C10D7 /* netinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netinc.h; sourceTree = "<group>"; };
+		016DC4E51A676119000C10D7 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		016DC4E61A676119000C10D7 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		016DC50A1A6761FC000C10D7 /* rng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rng.cpp; path = ../../WDL/rng.cpp; sourceTree = SOURCE_ROOT; };
+		016DC50B1A6761FC000C10D7 /* rng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rng.h; path = ../../WDL/rng.h; sourceTree = SOURCE_ROOT; };
+		016DC50C1A6761FC000C10D7 /* sha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sha.cpp; path = ../../WDL/sha.cpp; sourceTree = SOURCE_ROOT; };
+		016DC50D1A6761FC000C10D7 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha.h; path = ../../WDL/sha.h; sourceTree = SOURCE_ROOT; };
+		016DC60C1A677584000C10D7 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string.h; path = ../../WDL/string.h; sourceTree = SOURCE_ROOT; };
+		8DD76F6C0486A84900D96B5E /* NinjamServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NinjamServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* NinjamServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NinjamServer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016DC4D21A676119000C10D7 /* jnetlib */ = {
+			isa = PBXGroup;
+			children = (
+				016DC4D31A676119000C10D7 /* asyncdns.cpp */,
+				016DC4D41A676119000C10D7 /* asyncdns.h */,
+				016DC4D61A676119000C10D7 /* connection.cpp */,
+				016DC4D71A676119000C10D7 /* connection.h */,
+				016DC4D91A676119000C10D7 /* httpget.cpp */,
+				016DC4DA1A676119000C10D7 /* httpget.h */,
+				016DC4DE1A676119000C10D7 /* jnetlib.h */,
+				016DC4DF1A676119000C10D7 /* listen.cpp */,
+				016DC4E01A676119000C10D7 /* listen.h */,
+				016DC4E21A676119000C10D7 /* netinc.h */,
+				016DC4E51A676119000C10D7 /* util.cpp */,
+				016DC4E61A676119000C10D7 /* util.h */,
+			);
+			name = jnetlib;
+			path = ../../WDL/jnetlib;
+			sourceTree = SOURCE_ROOT;
+		};
+		08FB7794FE84155DC02AAC07 /* NinjamServer */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = NinjamServer;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				016DC60C1A677584000C10D7 /* string.h */,
+				016DC50A1A6761FC000C10D7 /* rng.cpp */,
+				016DC50B1A6761FC000C10D7 /* rng.h */,
+				016DC50C1A6761FC000C10D7 /* sha.cpp */,
+				016DC50D1A6761FC000C10D7 /* sha.h */,
+				016DC4D21A676119000C10D7 /* jnetlib */,
+				016DC4CA1A6760EB000C10D7 /* ninjamsrv.cpp */,
+				016DC4CB1A6760EB000C10D7 /* usercon.cpp */,
+				016DC4CC1A6760EB000C10D7 /* mpb.cpp */,
+				016DC4CD1A6760EB000C10D7 /* netmsg.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* NinjamServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* NinjamServer.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* NinjamServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "NinjamServer" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NinjamServer;
+			productInstallPath = "$(HOME)/bin";
+			productName = NinjamServer;
+			productReference = 8DD76F6C0486A84900D96B5E /* NinjamServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "NinjamServer" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* NinjamServer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* NinjamServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016DC4CE1A6760EB000C10D7 /* ninjamsrv.cpp in Sources */,
+				016DC4CF1A6760EB000C10D7 /* usercon.cpp in Sources */,
+				016DC4D01A6760EB000C10D7 /* mpb.cpp in Sources */,
+				016DC4D11A6760EB000C10D7 /* netmsg.cpp in Sources */,
+				016DC4EF1A676119000C10D7 /* asyncdns.cpp in Sources */,
+				016DC4F11A676119000C10D7 /* connection.cpp in Sources */,
+				016DC4F31A676119000C10D7 /* httpget.cpp in Sources */,
+				016DC4F61A676119000C10D7 /* listen.cpp in Sources */,
+				016DC4FA1A676119000C10D7 /* util.cpp in Sources */,
+				016DC50E1A6761FC000C10D7 /* rng.cpp in Sources */,
+				016DC50F1A6761FC000C10D7 /* sha.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = NinjamServer;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = NinjamServer;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "NinjamServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "NinjamServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -53,6 +53,18 @@
 
 #define VERSION "v0.06"
 
+// keep slash portable
+#ifdef WIN32
+# define SLASH '\\'
+#else
+# define SLASH '/'
+#endif
+
+// keep track of main() args
+static char ** Argv = 0;
+static int Argc = 1;
+
+
 const char *startupmessage="NINJAM Server " VERSION " built on " __DATE__ " at " __TIME__ " starting up...\n" "Copyright (C) 2005-2007, Cockos, Inc.\n";
 
 int g_set_uid=-1;
@@ -238,13 +250,23 @@ public:
 
 };
 
+static const char *GetPathFrom(const char* s)
+{
+  static char configfile[512];
+  memset(configfile, 0, sizeof(configfile));
+  
+  if (s) strncpy(configfile, s, sizeof(configfile)-1);
+  char *last_slash = strrchr(configfile, SLASH);
+  if (last_slash) *(last_slash + 1) = '\0';
+  return configfile;
+}
+
+
 
 static IUserInfoLookup *myCreateUserLookup(char *username)
 {
   return new localUserInfoLookup(username);
 }
-
-
 
 
 static int ConfigOnToken(LineParser *lp)
@@ -337,7 +359,16 @@ static int ConfigOnToken(LineParser *lp)
   else if (!stricmp(t,"ServerLicense"))
   {
     if (lp->getnumtokens() != 2) return -1;
-    FILE *fp=fopen(lp->gettoken_str(1),"rt");
+    const char * licFilename = lp->gettoken_str(1);
+    FILE *fp=fopen(licFilename,"rt");
+    if (!fp) // try local file read
+    {
+      char path[512];
+      snprintf(path, sizeof(path), "%s%s", GetPathFrom(Argv[0]), licFilename); 
+      printf("Trying to open local license file %s\n",path);
+      fp=fopen(path,"rt");
+    }
+
     if (!fp) 
     {
       printf("Error opening license file %s\n",lp->gettoken_str(1));
@@ -485,12 +516,12 @@ static int ConfigOnToken(LineParser *lp)
 
 };
 
-
-static int ReadConfig(char *configfile)
+static int ReadConfig(const char* configfile)
 {
   bool comment_state=0;
   int linecnt=0;
   WDL_String linebuild;
+  
   if (g_logfp) logText("[config] reloading configuration file\n");
   FILE *fp=strcmp(configfile,"-")?fopen(configfile,"rt"):stdin; 
   if (!fp)
@@ -669,16 +700,29 @@ void logText(char *s, ...)
 
 int main(int argc, char **argv)
 {
-
-  if (argc < 2)
-  {
-    usage();
-  }
+  Argc = argc;
+  Argv = argv;
+//  if (argc < 2)
+//  {
+//    usage();
+//  }
 
   m_group=new User_Group;
+  
+  char configfile[512];
+  memset(configfile, 0, sizeof(configfile));
 
+  if (argc>1) strncpy(configfile, argv[1], sizeof(configfile)-1);
+  
+  if (*configfile==0)
+  { // do something smart if no file is specified like loading the default one on the same directory if exists ... 
+    strncpy(configfile, GetPathFrom(argv[0]), sizeof(configfile)-1);
+    strncat(configfile, "config.cfg", sizeof(configfile)-1);
+    printf("[config] no file specified trying to load default config.cfg file %s ...\n", configfile);
+  }
+  
   printf("%s",startupmessage);
-  if (ReadConfig(argv[1]))
+  if (ReadConfig(configfile))
   {
     printf("Error loading config file!\n");
     exit(1);
