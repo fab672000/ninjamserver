@@ -828,7 +828,7 @@ int main(int argc, char **argv)
 #endif
     while (!g_done)
     {
-      JNL_Connection *con=m_listener->get_connect(2*65536,65536);
+      JNL_IConnection *con=m_listener->get_connect(2*65536,65536);
       if (con) 
       {
         char str[512];
@@ -979,7 +979,7 @@ int main(int argc, char **argv)
                 struct tm *t=localtime(&now);
                 sprintf(buf,"/%04d%02d%02d_%02d%02d",t->tm_year+1900,t->tm_mon+1,t->tm_mday,t->tm_hour,t->tm_min);
                 if (cnt)
-                  wsprintf(buf+strlen(buf),"_%d",cnt);
+                  sprintf(buf+strlen(buf),"_%d",cnt);
                 strcat(buf,".ninjam");
 
                 tmp.Set(g_config_logpath.Get());

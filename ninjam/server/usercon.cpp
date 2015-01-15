@@ -48,7 +48,7 @@
 static void guidtostr(unsigned char *guid, char *str)
 {
   int x;
-  for (x = 0; x < 16; x ++) wsprintf(str+x*2,"%02x",guid[x]);
+  for (x = 0; x < 16; x ++) sprintf(str+x*2,"%02x",guid[x]);
 }
 
 
@@ -96,7 +96,7 @@ extern void logText(char *s, ...);
 
 #define TRANSFER_TIMEOUT 8
 
-User_Connection::User_Connection(JNL_Connection *con, User_Group *grp) : m_auth_state(0), m_clientcaps(0), m_auth_privs(0), m_reserved(0), m_max_channels(0),
+User_Connection::User_Connection(JNL_IConnection *con, User_Group *grp) : m_auth_state(0), m_clientcaps(0), m_auth_privs(0), m_reserved(0), m_max_channels(0),
       m_vote_bpm(0), m_vote_bpm_lasttime(0), m_vote_bpi(0), m_vote_bpi_lasttime(0)
 {
   m_netcon.attach(con);
@@ -971,7 +971,7 @@ void User_Group::SetConfig(int bpi, int bpm)
   Broadcast(mk.build());
 }
 
-void User_Group::AddConnection(JNL_Connection *con, int isres)
+void User_Group::AddConnection(JNL_IConnection *con, int isres)
 {
   User_Connection *p=new User_Connection(con,this);
   if (isres) p->m_reserved=1;
