@@ -51,7 +51,7 @@
 #include "../../WDL/ptrlist.h"
 #include "../../WDL/string.h"
 
-#define VERSION "v0.06"
+#define VERSION "v0.6.1"
 
 // keep slash portable
 #ifdef WIN32
