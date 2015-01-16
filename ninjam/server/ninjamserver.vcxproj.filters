@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{05b05eab-1a3d-43ef-9102-925aba49fcdc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{98e4712c-a72c-479b-ad2a-e4dfc2d7fde3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\WDL">
+      <UniqueIdentifier>{18534836-f05f-417c-9dc2-3e145358c0d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\WDL\jnetlib">
+      <UniqueIdentifier>{8172be09-ca91-46ff-afb8-5a7d1519a522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{09fa7f2d-56c6-4175-af4d-b06a7aa81328}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\common headers">
+      <UniqueIdentifier>{dc6655d5-4946-4416-896d-bfddead1ce72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common headers\WDL headers">
+      <UniqueIdentifier>{35a0665f-823e-46bd-9592-03a4a210b714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1c4d827e-e7fe-4f82-971c-552960028e42}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\WDL\jnetlib\asyncdns.cpp">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\jnetlib\connection.cpp">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\jnetlib\httpget.cpp">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\jnetlib\listen.cpp">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\jnetlib\util.cpp">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\rng.cpp">
+      <Filter>Source Files\common\WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WDL\sha.cpp">
+      <Filter>Source Files\common\WDL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpb.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\netmsg.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ninjamsrv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usercon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\WDL\jnetlib\asyncdns.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\connection.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\httpget.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\jnetlib.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\listen.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\netinc.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\jnetlib\util.h">
+      <Filter>Source Files\common\WDL\jnetlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\heapbuf.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\lineparse.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\ptrlist.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\queue.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\rng.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\sha.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WDL\string.h">
+      <Filter>Header Files\common headers\WDL headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpb.h">
+      <Filter>Header Files\common headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\netmsg.h">
+      <Filter>Header Files\common headers</Filter>
+    </ClInclude>
+    <ClInclude Include="usercon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

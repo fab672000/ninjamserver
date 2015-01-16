@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ninjamserver", "ninjamserver.vcxproj", "{74B3F1A1-DC95-09CE-FC83-76C4594C0A20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B3F1A1-DC95-09CE-FC83-76C4594C0A20}.Debug|Win32.ActiveCfg = Debug|Win32
+		{74B3F1A1-DC95-09CE-FC83-76C4594C0A20}.Debug|Win32.Build.0 = Debug|Win32
+		{74B3F1A1-DC95-09CE-FC83-76C4594C0A20}.Release|Win32.ActiveCfg = Release|Win32
+		{74B3F1A1-DC95-09CE-FC83-76C4594C0A20}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

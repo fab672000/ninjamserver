@@ -56,6 +56,7 @@
 // keep slash portable
 #ifdef WIN32
 # define SLASH '\\'
+#define snprintf _snprintf
 #else
 # define SLASH '/'
 #endif

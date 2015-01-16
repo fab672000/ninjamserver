@@ -1,2 +1,13 @@
 ninjam/server/NinjamServer.xcodeproj/fab.mode1v3
 ninjam/server/NinjamServer.xcodeproj/fab.pbxuser
+ninjam/server/Release/CL.write.1.tlog
+ninjam/server/Debug/
+ninjam/server/Release/asyncdns.obj
+ninjam/server/Release/
+*.opensdf
+*.ipch
+*.ilk
+*.user
+*.suo
+*.sdf
+ninjam/server/ninjamserver*.exe
